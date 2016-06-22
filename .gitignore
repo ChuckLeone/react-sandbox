@@ -28,3 +28,9 @@ node_modules
 
 # Bower
 bower_components/
+
+.DS_Store
+.idea/
+.sass-cache
+nbproject
+npm-debug.log

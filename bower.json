@@ -1,0 +1,23 @@
+{
+  "name": "ux-sandbox",
+  "description": "Project for prototyping and developing reactJS apps",
+  "main": "index.html",
+  "authors": [
+    "Chuck Leone"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "campus-labs-bootstrap": "^0.3.10",
+    "campus-labs-topbar": "^0.2.4",
+    "campus-labs-icon-font": "^3.0.0"
+  }
+}

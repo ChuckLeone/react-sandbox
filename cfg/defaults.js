@@ -29,13 +29,13 @@ function getDefaultModules() {
       {
         test: /\.styl/,
         loader: 'style-loader!css-loader!postcss-loader!stylus-loader'
-      },
+      }, 
       {
-        test: /\.(png|jpg|gif|woff|woff2)$/,
-        loader: 'url-loader?limit=8192'
-      },
+        test: /\.(png|jpg|jpeg|gif)$/,
+        loader: 'url-loader?limit=10000'
+      }, 
       {
-        test: /\.(mp4|ogg|svg)$/,
+        test: /\.(eot|ttf|svg|woff|woff2|wav|mp3)$/,
         loader: 'file-loader'
       }
     ]
