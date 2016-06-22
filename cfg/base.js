@@ -8,13 +8,6 @@ let defaultSettings = require('./defaults');
 // let npmBase = path.join(__dirname, '../node_modules');
 // let additionalPaths = [ path.join(npmBase, 'react-bootstrap') ];
 
-// add CL bootstrap
-//let clBootstrap = require('../bower_components/campus-labs-bootstrap/src/cl.bootstrap.scss');
-
-//let siteStyle = require('../src/assets/css/site.css');
-  
-//let clIcons = require('../bower_components/campus-labs-icon-font/dist/latest/css/icons.min-v3.css');
-
 let additionalPaths = [];
 module.exports = {
   additionalPaths: additionalPaths,

@@ -35,7 +35,7 @@ function getDefaultModules() {
         loader: 'url-loader?limit=10000'
       }, 
       {
-        test: /\.(eot|ttf|svg|woff|woff2|wav|mp3)$/,
+        test: /\.(eot|ttf|svg|woff|woff2|wav|mp3|ogg|mp4)$/,
         loader: 'file-loader'
       }
     ]
