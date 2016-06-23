@@ -18,10 +18,14 @@ function getDefaultModules() {
         test: /\.sass/,
         loader: 'style-loader!css-loader!postcss-loader!sass-loader?outputStyle=expanded&indentedSyntax'
       },
+      // {
+      //   test: /\.scss$/,
+      //   loader: 'style-loader!css-loader!postcss-loader!sass-loader?outputStyle=expanded'
+      // },
       {
-        test: /\.scss/,
-        loader: 'style-loader!css-loader!postcss-loader!sass-loader?outputStyle=expanded'
-      },
+                test: /\.scss$/,
+                loaders: [ 'style', 'css', 'sass' ]
+            },
       {
         test: /\.less/,
         loader: 'style-loader!css-loader!postcss-loader!less-loader'
@@ -37,7 +41,7 @@ function getDefaultModules() {
       {
         test: /\.(eot|ttf|svg|woff|woff2|wav|mp3|ogg|mp4)$/,
         loader: 'file-loader'
-      }
+      },
     ]
   };
 }
