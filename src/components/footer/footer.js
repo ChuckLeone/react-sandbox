@@ -1,13 +1,21 @@
 import React from 'react';
+import FilterLink from '../../containers/FilterLink'
 
-var Footer = React.createClass({
-    render() {
-        return(
-            <div className="footer">
-                <h1>footer</h1>
-            </div>
-        )
-    }
-});
-
-module.exports = Footer;
+const Footer = () => (
+    <p>
+        Show:
+        {" "}
+        <FilterLink filter="SHOW_ALL">
+            All
+        </FilterLink>
+        {", "}
+        <FilterLink filter="SHOW_ACTIVE">
+            Active
+        </FilterLink>
+        {", "}
+        <FilterLink filter="SHOW_COMPLETED">
+            Completed
+        </FilterLink>
+    </p>
+)
+export default Footer

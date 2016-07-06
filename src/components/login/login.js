@@ -1,18 +1,23 @@
 import React from 'react';
 
-class LoginForm extends React.Component {
-  render() {
+var LoginForm = React.createClass ({
+    getInitialState: function() {
+    return {value: 'enter email'};
+  },
+  handleChange: function(event) {
+    this.setState({value: event.target.value});
+  },
+  render: function() {
     return (
           <div className="panel panel-default">
               <div className="panel-heading">
                   <h2>Login</h2>
               </div>
               <div className="panel-body">
-                  <p>Please login with your email address or campus ID.</p>
                   <form role="form">
                       <div className="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" className="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                      <label for="exampleInputEmail1">Email address or Campus ID</label>
+                      <input type="email" className="form-control" id="exampleInputEmail1" placeholder="email address or compus ID" value={this.props.value} />
                       </div>
                       <div className="form-group">
                       <label for="exampleInputPassword1">Password</label>
@@ -25,6 +30,6 @@ class LoginForm extends React.Component {
           </div>
     );
   }
-}
+});
 
 module.exports = LoginForm;
