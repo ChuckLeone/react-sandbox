@@ -1,20 +1,28 @@
 import React from 'react';
-//import Default from 'default';
 
-var Header = React.createClass({
-    render() {
-        return(
+const Header = () => (
+       <header className="container-fluid top-bar">
             <div className="row">
-                <div className="col-md-6">
-                   logo
+            <a href="/" role="link"></a>
+            <main-menu className="ng-isolate-scope">
+            <div id="main-menu-wrapper">
+                <div id="nav-toggle-button">
+                    <div className="menu-bar"></div>
+                    <div className="menu-bar"></div>
+                    <div className="menu-bar"></div>
                 </div>
-                <div className="col-md-6">
-                   name
-                   <img src={this.props.UserAvatarProp} />
-                </div>
+                <nav id="main-menu" className="top-bar__nav">
+                    <ul>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="../#/interaction">Interaction Patterns</a></li>
+                        <li><a href="/bootstrap" className="bootstrapGuide">Core UI (Bootstrap)</a></li>
+                        <li><a href="https://commons.campuslabs.today/CoreWeb/" target="_blank">Core UI (Legacy)</a></li>
+                        <li><a href="../#/brand">Product Design</a></li>
+                    </ul>
+                </nav>
             </div>
-        )
-    }
-});
-
-module.exports = Header;
+        </main-menu>
+            </div>
+            </header>
+)
+export default Header;
